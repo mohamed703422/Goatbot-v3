@@ -1,5 +1,5 @@
 # index.js
-Goat.newVersionDetected=You are using version %1, the latest version is %2. Please update to use the bot better by typing into the console/cmd command: %3
+Goat.newVersionDetected=You are using version %1, the latest version is %2. Please update to use the bot better by typing into the console/cmd command: node update
 Goat.autoRestart1=Bot will auto restart in %1
 Goat.autoRestart2=Bot will auto restart by cron job: %1
 Goat.googleApiTokenExpired=Google API refresh token has expired or been revoked, please get a new token at https://developers.google.com/oauthplayground/
@@ -89,28 +89,28 @@ handlerCheckData.cantCreateThread=Groups with id '%1' cannot be written to the d
 handlerCheckData.cantCreateUser=Users with id '%1' cannot be written to the database!
 
 # bot/handler/handlerEvents.js
-handlerEvents.userBanned=You have been banned from using the bot\n» Reason: %1\n» Time: %2\n» User ID: %3
-handlerEvents.threadBanned=This group has been banned from using the bot\n» Reason: %1\n» Time: %2\n» Thread ID: %3
-handlerEvents.onlyAdminBox=This group is currently enabled only group administrators can use the bot
-handlerEvents.onlyAdminBot=❌ | Currently only bot's admin can use bot
-handlerEvents.commandNotFound=Command "%1" does not exist, type %2help to see all available commands
-handlerEvents.commandNotFound2=The command you are using does not exist, type %1help to see all available commands
-handlerEvents.commandSyntaxError=The command you are using is wrong syntax, please type %1help %2 to see the details of how to use this command
-handlerEvents.onlyAdmin=❌ | Only group administrators can use the command "%1"
-handlerEvents.onlyAdminToUseOnReply=❌ | Only group administrators can use the reply function of the command "%1"
+handlerEvents.userBanned=┏━━━━━┫ ❌  ┣━━━━━┓\n┃ ⎎ 𝐁𝐀𝐍𝐍𝐄𝐃 ⎎ ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝒀𝒐𝒖 𝒉𝒂𝒗𝒆 𝒃𝒆𝒆𝒏 𝒃𝒂𝒏𝒏𝒆𝒅 𝒇𝒓𝒐𝒎\n┃𝒖𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒃𝒐𝒕\n┃➤ 𝑹𝒆𝒂𝒔𝒐𝒏: %1\n┃➤ 𝑻𝒊𝒎𝒆: %2\n┃➤ 𝑼𝒔𝒆𝒓 𝑰𝑫: %3\n┗━━━━━┫ ❌  ┣━━━━━┛
+handlerEvents.threadBanned=┏━━━━━┫ ❌  ┣━━━━━┓\n┃ ⎎ 𝐆𝐑𝐎𝐔𝐏 𝐁𝐀𝐍𝐍𝐄𝐃 ⎎ ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒃𝒂𝒏-\n┃-𝒆𝒅 𝒇𝒓𝒐𝒎 𝒖𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒃𝒐𝒕\n┃➤ 𝑹𝒆𝒂𝒔𝒐𝒏: %1\n┃➤ 𝑻𝒊𝒎𝒆: %2\n┃➤ 𝑼𝒔𝒆𝒓 𝑰𝑫: %3\n┗━━━━━┫ ❌  ┣━━━━━┛
+handlerEvents.onlyAdminBox=┏━━━━━┫ ❌  ┣━━━━━┓\n┃    ⎎ 𝐎𝐍𝐋𝐘-𝐀𝐃𝐌𝐈𝐍 ⎎    ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝑪𝒖𝒓𝒓𝒆𝒏𝒕𝒍𝒚 𝒐𝒏𝒍𝒚 𝒈𝒓𝒐𝒖𝒑 𝒂𝒅𝒎-\n┃-𝒊𝒏 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒄𝒉𝒂𝒕𝒃𝒐𝒕.\n┗━━━━━┫ ❌  ┣━━━━━┛
+handlerEvents.onlyAdminBot=┏━━━━━┫ ❌  ┣━━━━━┓\n┃    ⎎ 𝐎𝐍𝐋𝐘-𝐀𝐃𝐌𝐈𝐍 ⎎    ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝑪𝒖𝒓𝒓𝒆𝒏𝒕𝒍𝒚 𝒐𝒏𝒍𝒚 𝒃𝒐𝒕 𝒂𝒅𝒎-\n┃-𝒊𝒏 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒄𝒉𝒂𝒕𝒃𝒐𝒕.\n┗━━━━━┫ ❌  ┣━━━━━┛
+handlerEvents.=       𝐃𝐎𝐄𝐒 𝐍𝐎𝐓 𝐄𝐗𝐈𝐒𝐓𝐒\n┣━━━━━━━━━━━━━━━┫\n┃𝑪𝒐𝒎𝒎𝒂𝒏𝒅 %1 𝒅𝒐𝒆𝒔 𝒏𝒐𝒕 𝒆𝒙-\n┃-𝒊𝒔𝒕 𝒊𝒏 𝑴𝒂𝒕𝒆𝒐 𝒔𝒚𝒔𝒕𝒆𝒎 𝒕𝒚𝒑𝒆 %2𝒉-\n┃-𝒆𝒍𝒑 𝒕𝒐 𝒔𝒆𝒆 𝒎𝒚 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔.\n┗━━━━━┫ ❌  ┣━━━━━┛
+handlerEvents.commandNotFound2=          𝐍𝐎 𝐏𝐑𝐎𝐌𝐏𝐓 ┣━━━━━━━━━━━━━━━┫\n┃𝒉𝒆𝒍𝒍𝒐 %1 𝒊𝒔 𝒎𝒚 𝒑𝒓𝒆𝒇𝒊𝒙 𝒃𝒖𝒕 \n┃𝒖 𝒅𝒊𝒅𝒏'𝒕 𝒂𝒅𝒅 𝒂𝒏𝒚 𝒑𝒓𝒐𝒎𝒑𝒕 𝒕𝒚𝒑𝒆 \n┃%1help 𝒕𝒐 𝒔𝒆𝒆 𝒎𝒚 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔.\n┗━━━━━┫ ✅  ┣━━━━━┛
+handlerEvents.commandSyntaxError=       𝐖𝐑𝐎𝐍𝐆 𝐒𝐘𝐍𝐓𝐀𝐗\n┣━━━━━━━━━━━━━━━┫\n┃𝐓𝐡𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 \n┃𝐢𝐬 𝐰𝐫𝐨𝐧𝐠 𝐬𝐲𝐧𝐭𝐚𝐱, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐭𝐲𝐩𝐞\n┃%1𝐡𝐞𝐥𝐩 %2 𝐭𝐨 𝐬𝐞𝐞 𝐭𝐡𝐞 𝐝𝐞𝐭𝐚𝐢𝐥𝐬 \n┃𝐨𝐟 𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝\n┗━━━━━┫ ❌  ┣━━━━━┛
+handlerEvents.onlyAdmin=┏━━━━━┫❌ ┣━━━━━\n┃➣ Command: %1\n┃➣ 𝐑𝐨𝐥𝐞: 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧\n┃➣ 𝐌𝐨𝐝𝐞: 𝐨𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚-\n┃-𝐝𝐦𝐢𝐧 𝐜𝐚𝐧 𝐮𝐬𝐞\n┣━━━━━┫❌ ┣━━━━━┓\n┃.      𝐎𝐍𝐋𝐘 𝐀𝐃𝐌𝐈𝐍      ┃\n┗━━━━━━━ ━━━━━━━┛
+handlerEvents.onlyAdminToUseOnReply=┏━━━━━┫🤖┣━━━━━┓\n┃       𝗢𝗡𝗟𝗬 𝗔𝗗𝗠𝗜𝗡      ┃\n┣━━━━━━━━━━━━━━┫\n┃𝐨𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧 𝐜𝐚𝐧\n┃ 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐩𝐥𝐲 𝐟𝐮𝐧𝐜𝐭𝐢𝐨-\n┃𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝\n┗━━━━━┫🤖┣━━━━━┛
 handlerEvents.onlyAdminToUseOnReaction=❌ | Only group administrators can use the reaction function of the command "%1"
-handlerEvents.onlyAdminBot2=❌ | Only bot's admin can use the command "%1"
+handlerEvents.onlyAdminBot2=
 handlerEvents.onlyAdminBot2ToUseOnReply=❌ | Only bot's admin can use the reply function of the command "%1"
 handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | Only bot's admin can use the reaction function of the command "%1"
-handlerEvents.waitingForCommand=⏱ You are in the waiting time to use this command, please come back after %1s
+handlerEvents.waitingForCommand=         🛑𝗘𝗥𝗥𝗢𝗥!\n━━━━━━━━━━━━━━\n❝ This Command is on cool down wait for %1s. ❞\n━━━━━━━━━━━━━━
 handlerEvents.errorOccurred=❌ [ %1 ]\nAn error occurred at command "%2"\n\n%3
 handlerEvents.errorOccurred2=❌ [ %1 ]\nAn error occurred at command onChat in command "%2"\n\n%3
 handlerEvents.errorOccurred3=❌ [ %1 ]\nAn error occurred when executing onReply at command "%2"\n\n%3
 handlerEvents.errorOccurred4=❌ [ %1 ]\nAn error occurred when executing onReaction at command "%2"\n\n%3
 handlerEvents.errorOccurred5=❌ [ %1 ]\nAn error occurred when executing onEvent at command "%2"\n\n%3
 handlerEvents.errorOccurred6=❌ [ %1 ]\nAn error occurred when executing onEvent at command "%2"\n\n%3
-handlerEvents.errorOccurred7=❌ [ %1 ]\nAn error occurred when executing onAnyEvent at command "%2"\n\n%3
-handlerEvents.cannotFindCommandName=❌ Cannot find command name to execute this reply!
+handlerEvents.errorOccurred7=        🛑𝐄𝐑𝐑𝐎𝐑\𝙣━━━━━━━━━━━━━\n 𝘾𝙈𝘿 𝙉𝘼𝙈𝙀: %2 \n━━━━━━━━━━━━━\n𝙀𝙍𝙍𝙊𝙍 𝙄𝙉𝙁𝙊: %3\n━━━━━━━━━━━━━\n𝙏𝙄𝙈𝙀: %1
+handlerEvents.cannotFindCommandName=         🛑𝗘𝗥𝗥𝗢𝗥!\n━━━━━━━━━━━━━━\n❝ Cannot find commandName to execute this reply. ❞\n━━━━━━━━━━━━━━
 handlerEvents.cannotFindCommand=❌ Cannot find command "%1" to execute this reply!
 
 # bot/autoUptime.js
@@ -152,4 +152,5 @@ app.tooManyRequests=Too many requests in the last minute. Please try again later
 app.notPermissionChangeFbstate=You do not have permission to change fbstate!
 app.notFoundFbstate=Please enter fbstate!
 app.changedFbstateSuccess=Successfully changed fbstate!
+app.serverError=Server an error, please try again later!
 app.serverError=Server an error, please try again later!
