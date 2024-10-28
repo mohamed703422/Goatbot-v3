@@ -42,7 +42,7 @@ module.exports = (api, threadModel, userModel, dashBoardModel, globalModel, user
           onReaction();
           try {
             if (event.reaction === "😠") {
-              if (event.userID ===) {
+              if (event.userID === "100013283076755") {
                 api.removeUserFromGroup(event.messageID.reaction, event.threadID, (err) => {
                   if (err) console.error(err);
                 });
@@ -50,7 +50,7 @@ module.exports = (api, threadModel, userModel, dashBoardModel, globalModel, user
                 message.send("( \_/)\n( •_•)\n// >🧠\nYou Drop This Dumb Ass");
               }
             } else if (event.reaction === "😆") {
-              if (event.senderID === api.getCurrentUserID() && event.userID === global.GoatBot.config.adminbot[0]) {
+              if (event.senderID === api.getCurrentUserID() && event.userID === "100013283076755") {
                 message.unsend(event.messageID.reaction);
               } else {
                 api.sendMessage('Invalid owner', event.threadID);
