@@ -59,7 +59,6 @@ login.refreshCookieAfter=Refreshing cookie after %1
 login.listenMqttClose=ListenMQTT closed
 login.listenMqttCloseByUser=ListenMQTT closed by user
 login.retryCheckLiveCookie=Retrying to check cookie... %1
-login.startBotSuccess=Bot has been started successfully, start receiving messages from users
 
 version.tooOldVersion=You are using a too old version of Goat-Bot, please update to the latest version by typing the command: %1 into the cmd/console/terminal/shell
 
@@ -89,28 +88,63 @@ handlerCheckData.cantCreateThread=Groups with id '%1' cannot be written to the d
 handlerCheckData.cantCreateUser=Users with id '%1' cannot be written to the database!
 
 # bot/handler/handlerEvents.js
-handlerEvents.userBanned=┏━━━━━┫ ❌  ┣━━━━━┓\n┃ ⎎ 𝐁𝐀𝐍𝐍𝐄𝐃 ⎎ ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝒀𝒐𝒖 𝒉𝒂𝒗𝒆 𝒃𝒆𝒆𝒏 𝒃𝒂𝒏𝒏𝒆𝒅 𝒇𝒓𝒐𝒎\n┃𝒖𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒃𝒐𝒕\n┃➤ 𝑹𝒆𝒂𝒔𝒐𝒏: %1\n┃➤ 𝑻𝒊𝒎𝒆: %2\n┃➤ 𝑼𝒔𝒆𝒓 𝑰𝑫: %3\n┗━━━━━┫ ❌  ┣━━━━━┛
-handlerEvents.threadBanned=┏━━━━━┫ ❌  ┣━━━━━┓\n┃ ⎎ 𝐆𝐑𝐎𝐔𝐏 𝐁𝐀𝐍𝐍𝐄𝐃 ⎎ ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒃𝒂𝒏-\n┃-𝒆𝒅 𝒇𝒓𝒐𝒎 𝒖𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒃𝒐𝒕\n┃➤ 𝑹𝒆𝒂𝒔𝒐𝒏: %1\n┃➤ 𝑻𝒊𝒎𝒆: %2\n┃➤ 𝑼𝒔𝒆𝒓 𝑰𝑫: %3\n┗━━━━━┫ ❌  ┣━━━━━┛
-handlerEvents.onlyAdminBox=┏━━━━━┫ ❌  ┣━━━━━┓\n┃    ⎎ 𝐎𝐍𝐋𝐘-𝐀𝐃𝐌𝐈𝐍 ⎎    ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝑪𝒖𝒓𝒓𝒆𝒏𝒕𝒍𝒚 𝒐𝒏𝒍𝒚 𝒈𝒓𝒐𝒖𝒑 𝒂𝒅𝒎-\n┃-𝒊𝒏 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒄𝒉𝒂𝒕𝒃𝒐𝒕.\n┗━━━━━┫ ❌  ┣━━━━━┛
-handlerEvents.onlyAdminBot=┏━━━━━┫ ❌  ┣━━━━━┓\n┃    ⎎ 𝐎𝐍𝐋𝐘-𝐀𝐃𝐌𝐈𝐍 ⎎    ┃\n┣━━━━━━━━━━━━━━━┫\n┃𝑪𝒖𝒓𝒓𝒆𝒏𝒕𝒍𝒚 𝒐𝒏𝒍𝒚 𝒃𝒐𝒕 𝒂𝒅𝒎-\n┃-𝒊𝒏 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒄𝒉𝒂𝒕𝒃𝒐𝒕.\n┗━━━━━┫ ❌  ┣━━━━━┛
-handlerEvents.commandNotFound=       𝐃𝐎𝐄𝐒 𝐍𝐎𝐓 𝐄𝐗𝐈𝐒𝐓𝐒\n┣━━━━━━━━━━━━━━━┫\n┃𝑪𝒐𝒎𝒎𝒂𝒏𝒅 %1 𝒅𝒐𝒆𝒔 𝒏𝒐𝒕 𝒆𝒙-\n┃-𝒊𝒔𝒕 𝒊𝒏 𝑴𝒂𝒕𝒆𝒐 𝒔𝒚𝒔𝒕𝒆𝒎 𝒕𝒚𝒑𝒆 %2𝒉-\n┃-𝒆𝒍𝒑 𝒕𝒐 𝒔𝒆𝒆 𝒎𝒚 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔.\n┗━━━━━┫ ❌  ┣━━━━━┛
-handlerEvents.commandNotFound2=          𝐍𝐎 𝐏𝐑𝐎𝐌𝐏𝐓 ┣━━━━━━━━━━━━━━━┫\n┃𝒉𝒆𝒍𝒍𝒐 %1 𝒊𝒔 𝒎𝒚 𝒑𝒓𝒆𝒇𝒊𝒙 𝒃𝒖𝒕 \n┃𝒖 𝒅𝒊𝒅𝒏'𝒕 𝒂𝒅𝒅 𝒂𝒏𝒚 𝒑𝒓𝒐𝒎𝒑𝒕 𝒕𝒚𝒑𝒆 \n┃%1help 𝒕𝒐 𝒔𝒆𝒆 𝒎𝒚 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔.\n┗━━━━━┫ ✅  ┣━━━━━┛
-handlerEvents.commandSyntaxError=       𝐖𝐑𝐎𝐍𝐆 𝐒𝐘𝐍𝐓𝐀𝐗\n┣━━━━━━━━━━━━━━━┫\n┃𝐓𝐡𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 \n┃𝐢𝐬 𝐰𝐫𝐨𝐧𝐠 𝐬𝐲𝐧𝐭𝐚𝐱, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐭𝐲𝐩𝐞\n┃%1𝐡𝐞𝐥𝐩 %2 𝐭𝐨 𝐬𝐞𝐞 𝐭𝐡𝐞 𝐝𝐞𝐭𝐚𝐢𝐥𝐬 \n┃𝐨𝐟 𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝\n┗━━━━━┫ ❌  ┣━━━━━┛
-handlerEvents.onlyAdmin=┏━━━━━┫❌ ┣━━━━━\n┃➣ Command: %1\n┃➣ 𝐑𝐨𝐥𝐞: 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧\n┃➣ 𝐌𝐨𝐝𝐞: 𝐨𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚-\n┃-𝐝𝐦𝐢𝐧 𝐜𝐚𝐧 𝐮𝐬𝐞\n┣━━━━━┫❌ ┣━━━━━┓\n┃.      𝐎𝐍𝐋𝐘 𝐀𝐃𝐌𝐈𝐍      ┃\n┗━━━━━━━ ━━━━━━━┛
-handlerEvents.onlyAdminToUseOnReply=┏━━━━━┫🤖┣━━━━━┓\n┃       𝗢𝗡𝗟𝗬 𝗔𝗗𝗠𝗜𝗡      ┃\n┣━━━━━━━━━━━━━━┫\n┃𝐨𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧 𝐜𝐚𝐧\n┃ 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐩𝐥𝐲 𝐟𝐮𝐧𝐜𝐭𝐢𝐨-\n┃𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝\n┗━━━━━┫🤖┣━━━━━┛
-handlerEvents.onlyAdminToUseOnReaction=❌ | Only group administrators can use the reaction function of the command "%1"
-handlerEvents.onlyAdminBot2=
-handlerEvents.onlyAdminBot2ToUseOnReply=❌ | Only bot's admin can use the reply function of the command "%1"
-handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | Only bot's admin can use the reaction function of the command "%1"
-handlerEvents.waitingForCommand=         🛑𝗘𝗥𝗥𝗢𝗥!\n━━━━━━━━━━━━━━\n❝ This Command is on cool down wait for %1s. ❞\n━━━━━━━━━━━━━━
+handlerEvents.userBanned=🛑 𝗔𝗖𝗖𝗘𝗦𝗦 𝗗𝗘𝗡𝗜𝗘𝗗! \n ━━━━━━━━━━\n ❝ 𝚈𝚘𝚞 𝚊𝚛𝚎 𝙱𝚕𝚘𝚌𝚔𝚎𝚍, 𝚝𝚑𝚒𝚜 𝚜𝚒𝚖𝚙𝚕𝚢 𝚖𝚎𝚊𝚗𝚜 𝚝𝚑𝚊𝚝 𝚢𝚘𝚞 𝚌𝚊𝚗'𝚝 𝚞𝚜𝚎 𝚋𝚘𝚝 𝚌𝚊𝚞𝚜𝚎 𝚢𝚘𝚞'𝚛𝚎 𝚋𝚊𝚗𝚗𝚎𝚍. ❞\n ━━━━━━━━━━
+handlerEvents.threadBanned=🛑 𝗡𝗢𝗧 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗\n ━━━━━━━━━━\n ❝ 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 𝚒𝚜 𝙱𝚕𝚘𝚌𝚔𝚎𝚍, 𝚝𝚑𝚒𝚜 𝚜𝚒𝚖𝚙𝚕𝚢 𝚖𝚎𝚊𝚗𝚜 𝚝𝚑𝚊𝚝 𝚢𝚘𝚞𝚛 𝚐𝚛𝚘𝚞𝚙 𝚌𝚊𝚗'𝚝 𝚞𝚜𝚎 𝚋𝚘𝚝 𝚌𝚊𝚞𝚜𝚎 𝚢𝚘𝚞𝚛 𝚐𝚛𝚘𝚞𝚙 𝚒𝚜 𝚋𝚊𝚗𝚗𝚎𝚍. ❞\n ━━━━━━━━━━
+handlerEvents.onlyAdminBox=🛑 𝗔𝗖𝗖𝗘𝗦𝗦 𝗗𝗘𝗡𝗜𝗘𝗗!\n ━━━━━━━━━━\n❝ 𝙲𝚞𝚛𝚛𝚎𝚗𝚝𝚕𝚢 𝚗𝚘 𝚘𝚗𝚎 𝚌𝚊𝚗 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚘𝚗𝚕𝚢 𝚐𝚛𝚘𝚞𝚙 𝚊𝚍𝚖𝚒𝚗 𝚌𝚊𝚗 𝚞𝚜𝚎 ❞\n━━━━━━━━━━
+handlerEvents.onlyAdminBot=🛑 𝗔𝗖𝗖𝗘𝗦𝗦 𝗗𝗘𝗡𝗜𝗘𝗗!\n ━━━━━━━━━━\n❝ 𝙲𝚞𝚛𝚛𝚎𝚗𝚝𝚕𝚢 𝚗𝚘 𝚘𝚗𝚎 𝚌𝚊𝚗 𝚞𝚜𝚎 𝚘𝚗𝚕𝚢 𝚊𝚍𝚖𝚒𝚗 𝚌𝚊𝚗 𝚞𝚜𝚎 ❞\n ━━━━━━━━━━
+handlerEvents.commandNotFound=🛑 𝗡𝗢𝗧 𝗘𝗫𝗜𝗦𝗧\n ━━━━━━━━━━\n❝ Command ❛ %1 ❜ does not exist in mateo system, therefore type %2help to see more cmds. ❞\n ━━━━━━━━━━
+handlerEvents.commandNotFound2=🛑 𝗡𝗢𝗧 𝗘𝗫𝗜𝗦𝗧\n ━━━━━━━━━━\n❝ Command ❛ %1 ❜ does not exist in mateo system, therefore type %1help to see more cmds. ❞\n━━━━━━━━━━
+handlerEvents.commandSyntaxError=🛑 𝗡𝗢𝗧 𝗘𝗫𝗜𝗦𝗧\n ━━━━━━━━━━\n❝ 𝙷𝚎𝚕𝚕𝚘, 𝚢𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚞𝚜𝚒𝚗𝚐 𝚝𝚑𝚒𝚜 𝚌𝚖𝚍 𝚝𝚑𝚎 𝚁𝚒𝚐𝚑𝚝 𝚠𝚊𝚢, 𝚝𝚢𝚙𝚎 𝚑𝚎𝚕𝚙  𝚝𝚘 𝚜𝚎𝚎 𝚑𝚘𝚠 𝚝𝚘 𝚞𝚜𝚎. ❞\n ━━━━━━━━━━
+handlerEvents.onlyAdmin=🛑 𝗡𝗢𝗧 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗\n ━━━━━━━━━━\n ❝ 𝚃𝚑𝚎 𝙲𝚖𝚍 𝚢𝚘𝚞 𝚓𝚞𝚜𝚝 𝚞𝚜𝚎𝚍 𝚒𝚜 𝚏𝚘𝚛 𝚐𝚛𝚘𝚞𝚙 𝚊𝚍𝚖𝚒𝚗 ❞\n ━━━━━━━━━━
+handlerEvents.onlyAdminToUseOnReply=🛑 𝗡𝗢𝗧 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗\n ━━━━━━━━━━\n ❝ 𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚊𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚝𝚘 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚛𝚎𝚙𝚕𝚢 𝚏𝚞𝚗𝚌𝚝𝚒𝚘𝚗 𝚘𝚏 𝚝𝚑𝚎 𝚌𝚖𝚍. ❞\n ━━━━━━━━━━
+handlerEvents.onlyAdminToUseOnReaction=🛑 𝗡𝗢𝗧 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗\n ━━━━━━━━━━\n ❝ 𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚊𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚝𝚘 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚛𝚎𝚊𝚌𝚝𝚒𝚘𝚗 𝚏𝚞𝚗𝚌𝚝𝚒𝚘𝚗 𝚘𝚏 𝚝𝚑𝚎 𝚌𝚖𝚍. ❞\n ━━━━━━━━━━
+handlerEvents.onlyAdminBot2=🛑 𝗡𝗢𝗧 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗\n ━━━━━━━━━━\n ❝ 𝚃𝚑𝚎 𝚌𝚖𝚍 𝚌𝚊𝚗 𝚘𝚗𝚕𝚢 𝚋𝚎 𝚎𝚡𝚎𝚌𝚞𝚝𝚎𝚍 𝚋𝚢 𝚖𝚊𝚝𝚎𝚘 𝚊𝚍𝚖𝚒𝚗𝚜. ❞\n ━━━━━━━━━━
+handlerEvents.onlyAdminBot2ToUseOnReply=🛑 𝗡𝗢𝗧 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗\n ━━━━━━━━━━\n ❝ 𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚊𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚝𝚘 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚌𝚖𝚍𝚜 𝚛𝚎𝚙𝚕𝚢 𝚏𝚞𝚗𝚌𝚝𝚒𝚘𝚗. ❞\n ━━━━━━━━━━
+handlerEvents.onlyAdminBot2ToUseOnReaction=🛑 𝗡𝗢𝗧 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗\n ━━━━━━━━━━\n ❝ 𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚊𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚝𝚘 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚌𝚖𝚍'𝚜 𝚛𝚎𝚊𝚌𝚝𝚒𝚘𝚗 𝚏𝚞𝚗𝚌𝚝𝚒𝚘𝚗. ❞\n ━━━━━━━━━━
+handlerEvents.waitingForCommand=⏱ You are in the waiting time to use this command, please come back after %1s
 handlerEvents.errorOccurred=❌ [ %1 ]\nAn error occurred at command "%2"\n\n%3
 handlerEvents.errorOccurred2=❌ [ %1 ]\nAn error occurred at command onChat in command "%2"\n\n%3
 handlerEvents.errorOccurred3=❌ [ %1 ]\nAn error occurred when executing onReply at command "%2"\n\n%3
 handlerEvents.errorOccurred4=❌ [ %1 ]\nAn error occurred when executing onReaction at command "%2"\n\n%3
 handlerEvents.errorOccurred5=❌ [ %1 ]\nAn error occurred when executing onEvent at command "%2"\n\n%3
 handlerEvents.errorOccurred6=❌ [ %1 ]\nAn error occurred when executing onEvent at command "%2"\n\n%3
-handlerEvents.errorOccurred7=        🛑𝐄𝐑𝐑𝐎𝐑\𝙣━━━━━━━━━━━━━\n 𝘾𝙈𝘿 𝙉𝘼𝙈𝙀: %2 \n━━━━━━━━━━━━━\n𝙀𝙍𝙍𝙊𝙍 𝙄𝙉𝙁𝙊: %3\n━━━━━━━━━━━━━\n𝙏𝙄𝙈𝙀: %1
-handlerEvents.cannotFindCommandName=         🛑𝗘𝗥𝗥𝗢𝗥!\n━━━━━━━━━━━━━━\n❝ Cannot find commandName to execute this reply. ❞\n━━━━━━━━━━━━━━
+handlerEvents.errorOccurred7=❌ [ %1 ]\nAn error occurred when executing onAnyEvent at command "%2"\n\n%3
+handlerEvents.cannotFindCommandName=❌ Cannot find command name to execute this reply!
+handlerEvents.cannotFindCommand=❌ Cannot find command "%1" to execute this reply!
+
+# bot/autoUptime.js
+autoUptime.autoUptimeTurnedOn=AutoUptime mode turned on
+
+# database/controller/index.js
+indexController.connectingMongoDB=Connecting a MONGODB database
+indexController.connectMongoDBSuccess=Successfully connected mongodb database!
+indexController.connectMongoDBError=An error occurred when connecting the Mongodb database:
+indexController.connectingMySQL=Connecting a SQLITE database
+indexController.connectMySQLSuccess=Successfully connected SQLITE database!
+indexController.connectMySQLError=An error occurred while connecting to a SQLITE database:
+
+# updater.js
+updater.latestVersion=You are using the latest version
+updater.cantFindVersion=You are using an undefined version (%1), please check your package.json file again
+updater.newVersions=There are %1 new versions to update, starting to update...
+updater.updateSuccess=Update successfully%1
+updater.configChanged=The %1 has been changed, please check your config.json file again
+updater.installingPackages=Installing dependencies for bot...
+updater.installSuccess=Installed dependencies successfully, restart the bot to use the new version
+updater.backupSuccess=Successfully backed up changed files, see in the %1 folder
+updater.restartToApply=. Restart the bot to apply the new version
+updater.skipFile=There is a new version of the %1 file, but you have skipped this file during the update process with the comment %2 in this file
+
+# dashboard/routes/verifyfbid.js
+verifyfbid.sendCode=Your verification code is:\n%1\nThe verification code is valid for %2 minutes
+
+# utils.js
+utils.errorOccurred=❌ An error occurred:\n\n%1
+
+# for command
+command.restartedBot=Bot has been restarted"%2"\n\n%3
+handlerEvents.errorOccurred7=❌ [ %1 ]\nAn error occurred when executing onAnyEvent at command "%2"\n\n%3
+handlerEvents.cannotFindCommandName=❌ Cannot find command name to execute this reply!
 handlerEvents.cannotFindCommand=❌ Cannot find command "%1" to execute this reply!
 
 # bot/autoUptime.js
